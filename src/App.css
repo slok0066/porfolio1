@@ -1,0 +1,135 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spotlight {
+  0% {
+    opacity: 0;
+    transform: translate(-72%, -62%) scale(0.5);
+  }
+  
+  100% {
+    opacity: 0.9;
+    transform: translate(-12%, -1%) scale(1);
+  }
+}
+
+.animate-spotlight {
+  animation: spotlight 2s ease forwards 0.5s;
+}
+
+@keyframes blob {
+  0% {
+    transform: scale(1) translate(0px, 0px);
+  }
+  33% {
+    transform: scale(1.1) translate(30px, -30px);
+  }
+  66% {
+    transform: scale(0.9) translate(-20px, 20px);
+  }
+  100% {
+    transform: scale(1) translate(0px, 0px);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite alternate;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Spotify Card Animations */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.005);
+  }
+}
+
+@keyframes spotify-wave {
+  0%, 100% { height: 4px; }
+  50% { height: 16px; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-spotify-wave {
+  animation: spotify-wave 1.2s ease-in-out infinite;
+}
+
+:root {
+  --background: 0 0% 3.9%;
+  --foreground: 0 0% 98%;
+  --primary: 252 100% 70%;
+  --primary-foreground: 0 0% 98%;
+  --muted: 0 0% 15%;
+  --muted-foreground: 0 0% 63.9%;
+  --border: 0 0% 14.9%;
+}
+
+.bg-background\/5 {
+  background-color: rgba(var(--background), 0.05);
+}
+
+.bg-primary\/5 {
+  background-color: rgba(var(--primary), 0.05);
+}
+
+.bg-primary\/20 {
+  background-color: rgba(var(--primary), 0.2);
+}
+
+.bg-muted {
+  background-color: hsl(var(--muted));
+}
+
+.bg-primary {
+  background-color: hsl(var(--primary));
+}
+
+.border-border {
+  border-color: hsl(var(--border));
+}
+
+.text-foreground\/80 {
+  color: hsla(var(--foreground), 0.8);
+}
+
+.text-primary {
+  color: hsl(var(--primary));
+}
