@@ -48,7 +48,7 @@ export function HeroSection() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <p className="text-2xl md:text-3xl font-semibold text-neutral-300 mb-5">
-                15-year-old Programmer
+                17-year-old Programmer
               </p>
             </motion.div>
             
