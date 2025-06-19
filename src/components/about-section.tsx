@@ -13,7 +13,7 @@ export function AboutSection() {
     {
       icon: <Code className="w-6 h-6 text-blue-400" />,
       title: "Self-taught Programmer",
-      period: "2 Years Experience",
+      period: "1.5 Years Experience",
       description: "Learning web development and programming fundamentals"
     },
     {
@@ -230,7 +230,7 @@ export function AboutSection() {
               
               <div className="space-y-4 text-white/80">
                 {[
-                  "I'm a 15-year-old developer with a passion for creating digital experiences. My journey in programming began two years ago when I discovered my love for building things with code.",
+                  "I'm a 17-year-old developer with a passion for creating digital experiences. My journey in programming began two years ago when I discovered my love for building things with code.",
                   "Currently a high school student, I dedicate my free time to expanding my knowledge in web development and exploring the exciting world of technology.",
                   "I believe in learning by doing, which is why I'm constantly working on personal projects that challenge me to grow my skills."
                 ].map((paragraph, index) => (
